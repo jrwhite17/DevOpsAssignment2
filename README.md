@@ -15,6 +15,7 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 ```
 
 ### Deploying the CloudFormation template
+* Estimated Jenkins Deployment/Configuration Time (t2.small): 8 minutes*
 
 Log into the AWS console.  
 Navigate to the CloudFormation service page.  
@@ -33,9 +34,24 @@ Select the "Next" button to continue on to the Options page.
 Select the "Next" button to continue on to the Review page.  
 If everything on the Review page looks satisfactory, click the "Create" button to execute the deployment.
 
+The Jenkins server's URL can be found under the Stack's "Outputs" tab.
+
+### Deploying the ELK stack from Jenkins
+* Estimated ELK Deployment/Configuration Time (t2.small): 8 minutes*
+
+Log into the Jenkins server using the credentials you provided to the initial CloudFormation template.  
+Click on the "Deploy_ELK_Stack" Jenkins job.  
+On the "Deploy_ELK_Stack" page, click the "Configure" tab.
+Scroll down to "Build Environment" and enter your valid AWS credentials (Access Key & Secret Key).
+Click the "Save" button.  
+On the "Deploy_ELK_Stack" page, click the "Build with Parameters" tab.
+Specify a Stack name and fill out the necessary parameters for this for this deployment. (Note: If you use the same Stack name as you previously used on the CloudFormation deployment page, that stack will be updated with the new ELK stack.)  
+Click the "Build" button to execute the ELK stack deployment.
+
+The ELK stack's URL can be found under the Stack's "Outputs" tab on the CloudFormation page.
 
 
-## Running the tests
+## Running Automated Tests
 
 ### TBD
 
@@ -48,7 +64,7 @@ If everything on the Review page looks satisfactory, click the "Create" button t
 
 ## Potential Improvements
 
-* Configure Jenkins to use Https
+* Configure Jenkins and ELK to use Https
 * Deploy the ELK stack accross multiple EC2 instances
 * Configure a Nginx reverse proxy for the ELK stack
 * Improve deployment time by using a preconfigured Jenkins AMI
