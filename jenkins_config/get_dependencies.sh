@@ -48,3 +48,6 @@ sudo yum install python-pip -y
 #Install awscli
 sudo pip install awscli --upgrade --user
 
+#Restart Jenkins just in case
+sudo service jenkins restart
+

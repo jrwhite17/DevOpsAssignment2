@@ -312,7 +312,21 @@
                             ]
                         ]
                     }
-                }
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "JenkinsServer"
+                    },
+                    {
+                        "Key": "CreateDate",
+                        "Value": "20170820"
+                    },
+                    {
+                        "Key": "Project",
+                        "Value": "DevOpsAssignment2"
+                    }
+                ]
             },
             "DependsOn": [
                 "InternetGateway"
@@ -377,7 +391,21 @@
                 ],
                 "VpcId": {
                     "Ref": "JWhiteVPC"
-                }
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "JenkinsSecurityGroup"
+                    },
+                    {
+                        "Key": "CreateDate",
+                        "Value": "20170820"
+                    },
+                    {
+                        "Key": "Project",
+                        "Value": "DevOpsAssignment2"
+                    }
+                ]
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
@@ -428,6 +456,26 @@
             "MinLength": 1,
             "Type": "String",
             "Default": "root"
+        }
+    },
+    "Outputs": {
+        "JenkinsURL": {
+            "Description": "Jenkins Server URL",
+            "Value": {
+                "Fn::Join": [
+                    "",
+                    [
+                        "http://",
+                        {
+                            "Fn::GetAtt": [
+                                "JenkinsServer",
+                                "PublicIp"
+                            ]
+                        },
+                        ":8080"
+                    ]
+                ]
+            }
         }
     }
 }
