@@ -1,14 +1,16 @@
 # DevOps Assignment 2
 
-### Objective:
+### Objective
 Use CM tools such as Puppet, Ansible (preferable), or Chef to automate the installation of ELK. This script must be triggered Jenkins job to set up ELK.
  
-### Deliverable:
+### Deliverable
 A cloudformation template that launches a Jenkins AMI prepackaged with the job. When the job is run, it should automatically trigger the launch of an EC2 instance and install ELK.
 
 ### Prerequisites
 
-Clone the github repository or download the "cloudformation_devops_assignment2.template" CloudFormation template manually.
+Clone the github repository or download the "
+**cloudformation_devops_assignment2.template**
+" CloudFormation template manually.
 
 ```
 git clone https://github.com/jrwhite17/DevOpsAssignment2
