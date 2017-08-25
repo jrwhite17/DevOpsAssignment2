@@ -10,7 +10,6 @@
 
 JENKINS_HOME_DIR="/var/lib/jenkins"
 
-
 #Update Packages
 sudo yum update -y
 #Install wget
