@@ -443,7 +443,8 @@
 	                                "JenkinsServer",
 	                                "PublicIp"
 	                            ]
-	                    }
+	                    },
+						":8080"
 	                    ]
 	                ]
 	        }
