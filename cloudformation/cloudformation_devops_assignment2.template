@@ -312,7 +312,7 @@
                                 {
                                     "Ref": "AWS::StackName"
                                 },
-                                "/' DevOpsAssignment2/jenkins_config/Deploy_ELK_Stack_Jenkins_Job.xml\n",
+                                "/' DevOpsAssignment2/jenkins_config/Deploy_ELK_Stack_Jenkins_Job_config.xml\n",
                                 "sudo sh DevOpsAssignment2/jenkins_config/get_dependencies.sh"
                             ]
                         ]
