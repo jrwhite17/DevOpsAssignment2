@@ -18,6 +18,7 @@ sudo yum install wget -y
 #Install Java
 sudo yum install java -y
 
+
 #Add the Jenkins repository to the yum repos
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 #Import Jenkins repository key
@@ -50,4 +51,3 @@ sudo pip install awscli --upgrade --user
 
 #Restart Jenkins just in case
 sudo service jenkins restart
-
