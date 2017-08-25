@@ -16,11 +16,11 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 
 ### Deploying the CloudFormation template
 
-Log into the AWS console.
-Navigate to the CloudFormation service page.
-Click on the "Create Stack" button.
-Click on the "Upload a template to Amazon S3" radio button.
-Click on the "Choose File" button.
+Log into the AWS console.  
+Navigate to the CloudFormation service page.  
+Click on the "Create Stack" button.  
+Click on the "Upload a template to Amazon S3" radio button.  
+Click on the "Choose File" button.  
 Navigate to the directory housing the "cloudformation_devops_assignment2.template" and select "Open".
 
 Note: If you cloned the github repository. The file location should be:
@@ -28,9 +28,9 @@ Note: If you cloned the github repository. The file location should be:
 /DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
 ```
 
-Specify a Stack name and fill out the necessary parameters for this for this deployment.
-Select the "Next" button to continue on to the Options page.
-Select the "Next" button to continue on to the Review page.
+Specify a Stack name and fill out the necessary parameters for this for this deployment.  
+Select the "Next" button to continue on to the Options page.  
+Select the "Next" button to continue on to the Review page.  
 If everything on the Review page looks satisfactory, click the "Create" button to execute the deployment.
 
 
