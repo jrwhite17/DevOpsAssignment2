@@ -43,6 +43,9 @@ If everything on the Review page looks satisfactory, click the "Create" button t
 
 * **Johnathan White** - [Github](https://github.com/jrwhite17)
 
+## Notes
+[Google Doc](https://docs.google.com/document/d/1o1o_rkduFHuvIolAd8G8mSbP2x8Q9r0qlCpKwVkSWFo/edit?usp=sharing)
+
 ## Potential Improvements
 
 * Configure Jenkins to use Https
