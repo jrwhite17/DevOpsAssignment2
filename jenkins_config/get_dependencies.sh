@@ -10,20 +10,22 @@
 
 JENKINS_HOME_DIR="/var/lib/jenkins"
 
-
+sudo echo "test" >> /tmp/test1.txt
 #Update Packages
 sudo yum update -y
 #Install wget
+sudo echo "test" >> /tmp/test2.txt
 sudo yum install wget -y
 #Install Java
 sudo yum install java -y
-
+sudo echo "test" >> /tmp/test3.txt
 
 #Add the Jenkins repository to the yum repos
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 #Import Jenkins repository key
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 #Install Jenkins
+sudo echo "test" >> /tmp/test4.txt
 sudo yum install jenkins -y
 #Move configuration files to Jenkins directory
 sudo mkdir $JENKINS_HOME_DIR/init.groovy.d
