@@ -12,7 +12,7 @@
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
           <name>StackName</name>
-          <description>Enter the name of the stack to be updated.</description>
+          <description>Enter the name of the stack to be deployed or updated.</description>
           <defaultValue>DevOpsAssignment2STACK</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
