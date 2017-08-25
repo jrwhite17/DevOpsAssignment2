@@ -74,4 +74,5 @@ Note: If you cloned the github repository. The file location should be:
 * Improve deployment time by using a preconfigured Jenkins AMI
 * Create handoff of current Stack name to the Jenkins job Stack name default value
 * Create automated tests
+* Execute Ansible remotely from Jenkins server to the deployed EC2 instance
 
