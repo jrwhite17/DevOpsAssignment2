@@ -73,4 +73,5 @@ Note: If you cloned the github repository. The file location should be:
 * Configure a Nginx reverse proxy for the ELK stack
 * Improve deployment time by using a preconfigured Jenkins AMI
 * Create handoff of current Stack name to the Jenkins job Stack name default value
+* Create automated tests
 
