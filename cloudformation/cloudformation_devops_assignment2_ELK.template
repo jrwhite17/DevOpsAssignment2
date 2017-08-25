@@ -1,0 +1,650 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Metadata": {
+    "AWS::CloudFormation::Designer": {
+      "84c94e15-b945-4ce7-9103-d9fdfeacfa97": {
+        "size": {
+          "width": 670,
+          "height": 230
+        },
+        "position": {
+          "x": 220,
+          "y": 70
+        },
+        "z": 1,
+        "embeds": [
+          "1713d698-baff-4f47-a24a-e734691df808",
+          "611e9925-6403-47e2-a346-fed45396b828",
+          "c4bc63bb-a9c8-4e42-a9f4-bf5aed8684f1",
+          "ef2d3896-9dca-4a17-a709-65d7bdc354c9",
+          "e1ca7ff7-331d-4a42-bb11-98c6ea5dcb8c"
+        ]
+      },
+      "e1ca7ff7-331d-4a42-bb11-98c6ea5dcb8c": {
+        "size": {
+          "width": 140,
+          "height": 140
+        },
+        "position": {
+          "x": 720,
+          "y": 110
+        },
+        "z": 2,
+        "parent": "84c94e15-b945-4ce7-9103-d9fdfeacfa97",
+        "embeds": [
+          "e17578ce-2a49-44c7-8ec5-75acfa031751"
+        ]
+      },
+      "e17578ce-2a49-44c7-8ec5-75acfa031751": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 760,
+          "y": 150
+        },
+        "z": 3,
+        "parent": "e1ca7ff7-331d-4a42-bb11-98c6ea5dcb8c",
+        "embeds": [
+          
+        ],
+        "references": [
+          "3b400ce2-449a-48c2-9526-9583b65c455d"
+        ],
+        "dependson": [
+          "e6368be4-5600-4e68-9f8f-4e15636060c7"
+        ]
+      },
+      "3b400ce2-449a-48c2-9526-9583b65c455d": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 910,
+          "y": 150
+        },
+        "z": 0,
+        "embeds": [
+          
+        ]
+      },
+      "ef2d3896-9dca-4a17-a709-65d7bdc354c9": {
+        "size": {
+          "width": 140,
+          "height": 140
+        },
+        "position": {
+          "x": 520,
+          "y": 110
+        },
+        "z": 2,
+        "parent": "84c94e15-b945-4ce7-9103-d9fdfeacfa97",
+        "embeds": [
+          "4b38aaa2-113f-45ec-b35c-6d8f6222a456"
+        ]
+      },
+      "4b38aaa2-113f-45ec-b35c-6d8f6222a456": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 560,
+          "y": 150
+        },
+        "z": 3,
+        "parent": "ef2d3896-9dca-4a17-a709-65d7bdc354c9",
+        "embeds": [
+          
+        ],
+        "isassociatedwith": [
+          "c4bc63bb-a9c8-4e42-a9f4-bf5aed8684f1"
+        ],
+        "dependson": [
+          "3b400ce2-449a-48c2-9526-9583b65c455d"
+        ],
+        "isrelatedto": [
+          "53c248db-4da6-4c6a-b46f-9dfadb7461a3",
+          "c4bc63bb-a9c8-4e42-a9f4-bf5aed8684f1"
+        ]
+      },
+      "e6368be4-5600-4e68-9f8f-4e15636060c7": {
+        "source": {
+          "id": "3b400ce2-449a-48c2-9526-9583b65c455d"
+        },
+        "target": {
+          "id": "84c94e15-b945-4ce7-9103-d9fdfeacfa97"
+        },
+        "z": 0
+      },
+      "c4bc63bb-a9c8-4e42-a9f4-bf5aed8684f1": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 430,
+          "y": 110
+        },
+        "z": 2,
+        "parent": "84c94e15-b945-4ce7-9103-d9fdfeacfa97",
+        "embeds": [
+          
+        ]
+      },
+      "ccf8a1eb-d68c-4f99-8a6a-c81cd98b39b4": {
+        "source": {
+          "id": "4b38aaa2-113f-45ec-b35c-6d8f6222a456"
+        },
+        "target": {
+          "id": "c4bc63bb-a9c8-4e42-a9f4-bf5aed8684f1"
+        },
+        "z": 4
+      },
+      "24f6a18c-ee38-45b6-af1a-7235eb0b13c0": {
+        "source": {
+          "id": "e1ca7ff7-331d-4a42-bb11-98c6ea5dcb8c"
+        },
+        "target": {
+          "id": "ef2d3896-9dca-4a17-a709-65d7bdc354c9"
+        },
+        "z": 2
+      },
+      "611e9925-6403-47e2-a346-fed45396b828": {
+        "size": {
+          "width": 140,
+          "height": 140
+        },
+        "position": {
+          "x": 260,
+          "y": 110
+        },
+        "z": 2,
+        "parent": "84c94e15-b945-4ce7-9103-d9fdfeacfa97",
+        "embeds": [
+          "ab6e01cf-2eba-4304-98db-831646f14673"
+        ]
+      },
+      "fb2925f3-98d9-447a-bc5d-eec92f068f80": {
+        "source": {
+          "id": "e1ca7ff7-331d-4a42-bb11-98c6ea5dcb8c"
+        },
+        "target": {
+          "id": "611e9925-6403-47e2-a346-fed45396b828"
+        },
+        "z": 2
+      },
+      "1713d698-baff-4f47-a24a-e734691df808": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 430,
+          "y": 190
+        },
+        "z": 2,
+        "parent": "84c94e15-b945-4ce7-9103-d9fdfeacfa97",
+        "embeds": [
+          
+        ]
+      },
+      "ab6e01cf-2eba-4304-98db-831646f14673": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 300,
+          "y": 150
+        },
+        "z": 3,
+        "parent": "611e9925-6403-47e2-a346-fed45396b828",
+        "embeds": [
+          
+        ],
+        "dependson": [
+          "3b400ce2-449a-48c2-9526-9583b65c455d"
+        ],
+        "isrelatedto": [
+          "1713d698-baff-4f47-a24a-e734691df808"
+        ]
+      }
+    }
+  },
+  "Resources": {
+    "JWhiteVPC": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": "true",
+        "EnableDnsSupport": "true",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "JWhiteVPC"
+          },
+          {
+            "Key": "CreateDate",
+            "Value": "20170820"
+          },
+          {
+            "Key": "Project",
+            "Value": "DevOpsAssignment2"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "84c94e15-b945-4ce7-9103-d9fdfeacfa97"
+        }
+      }
+    },
+    "InternetRouteTable": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "JWhiteVPC"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "InternetRouteTable"
+          },
+          {
+            "Key": "CreateDate",
+            "Value": "20170820"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "e1ca7ff7-331d-4a42-bb11-98c6ea5dcb8c"
+        }
+      }
+    },
+    "Route": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "InternetRouteTable"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "InternetGateway"
+        }
+      },
+      "DependsOn": "GatewayVPCLink",
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "e17578ce-2a49-44c7-8ec5-75acfa031751"
+        }
+      }
+    },
+    "InternetGateway": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "InternetGateway"
+          },
+          {
+            "Key": "CreateDate",
+            "Value": "20170820"
+          },
+          {
+            "Key": "Project",
+            "Value": "DevOpsAssignment2"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "3b400ce2-449a-48c2-9526-9583b65c455d"
+        }
+      }
+    },
+    "JenkinsSubnet": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": {
+          "Ref": "JWhiteVPC"
+        },
+        "CidrBlock": "10.0.1.0/24",
+        "MapPublicIpOnLaunch": "true",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "JenkinsSubnet"
+          },
+          {
+            "Key": "CreateDate",
+            "Value": "20170820"
+          },
+          {
+            "Key": "Project",
+            "Value": "DevOpsAssignment2"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "ef2d3896-9dca-4a17-a709-65d7bdc354c9"
+        }
+      }
+    },
+    "JenkinsServer": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-c998b6b2",
+        "InstanceType": {
+          "Ref": "JenkinsEC2Instance"
+        },
+        "NetworkInterfaces": [
+          {
+            "AssociatePublicIpAddress": "true",
+            "DeleteOnTermination": "true",
+            "DeviceIndex": "0",
+            "GroupSet": [
+              {
+                "Ref": "JenkinsSecurityGroup"
+              }
+            ],
+            "SubnetId": {
+              "Ref": "JenkinsSubnet"
+            }
+          }
+        ],
+        "KeyName": {
+          "Ref": "sshPemKeyInput"
+        },
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                "#!/bin/bash\n",
+                "sudo echo '<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?><JenkinsCredentials username=\"",
+                {
+                  "Ref": "JenkinsUsername"
+                },
+                "\" password=\"",
+                {
+                  "Ref": "JenkinsPassword"
+                },
+                "\"/>' >> /tmp/jenkinsCreds.xml\n",
+                "sudo yum install git -y\n",
+                "sudo git clone https://github.com/jrwhite17/DevOpsAssignment2\n",
+                "sudo sh DevOpsAssignment2/jenkins_config/get_dependencies.sh"
+              ]
+            ]
+          }
+        }
+      },
+      "DependsOn": [
+        "InternetGateway"
+      ],
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "4b38aaa2-113f-45ec-b35c-6d8f6222a456"
+        }
+      }
+    },
+    "GatewayVPCLink": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "InternetGatewayId": {
+          "Ref": "InternetGateway"
+        },
+        "VpcId": {
+          "Ref": "JWhiteVPC"
+        }
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "e6368be4-5600-4e68-9f8f-4e15636060c7"
+        }
+      }
+    },
+    "JenkinsSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Jenkins Server Security Controls",
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "22",
+            "ToPort": "22"
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "80",
+            "ToPort": "80"
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "8080",
+            "ToPort": "8080"
+          },
+		  {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "443",
+            "ToPort": "443"
+          }
+        ],
+        "VpcId": {
+          "Ref": "JWhiteVPC"
+        }
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "c4bc63bb-a9c8-4e42-a9f4-bf5aed8684f1"
+        }
+      }
+    },
+    "JenkinsSubnetRouteTableAssociation": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "InternetRouteTable"
+        },
+        "SubnetId": {
+          "Ref": "JenkinsSubnet"
+        }
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "24f6a18c-ee38-45b6-af1a-7235eb0b13c0"
+        }
+      }
+    },
+    "ELKStackSubnetRouteTableAssociation": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "InternetRouteTable"
+        },
+        "SubnetId": {
+          "Ref": "ELKStackSubnet"
+        }
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "fb2925f3-98d9-447a-bc5d-eec92f068f80"
+        }
+      }
+    },
+    "ELKStackSubnet": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": {
+          "Ref": "JWhiteVPC"
+        },
+        "CidrBlock": "10.0.2.0/24",
+        "MapPublicIpOnLaunch": "true",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "ELKSubnet"
+          },
+          {
+            "Key": "CreateDate",
+            "Value": "20170824"
+          },
+          {
+            "Key": "Project",
+            "Value": "DevOpsAssignment2"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "611e9925-6403-47e2-a346-fed45396b828"
+        }
+      }
+    },
+    "ELKStackSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "ELK Stack Security Controls",
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "22",
+            "ToPort": "22"
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "80",
+            "ToPort": "80"
+          },
+		  {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "443",
+            "ToPort": "443"
+          },
+		  {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "9200",
+            "ToPort": "9200"
+          },
+		  {
+            "CidrIp": "0.0.0.0/0",
+            "IpProtocol": "tcp",
+            "FromPort": "5601",
+            "ToPort": "5601"
+          }
+        ],
+        "VpcId": {
+          "Ref": "JWhiteVPC"
+        }
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "1713d698-baff-4f47-a24a-e734691df808"
+        }
+      }
+    },
+    "ELKStack": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-c998b6b2",
+        "InstanceType": {
+          "Ref": "ELKStackEC2Instance"
+        },
+        "NetworkInterfaces": [
+          {
+            "AssociatePublicIpAddress": "true",
+            "DeleteOnTermination": "true",
+            "DeviceIndex": "0",
+            "GroupSet": [
+              {
+                "Ref": "ELKStackSecurityGroup"
+              }
+            ],
+            "SubnetId": {
+              "Ref": "ELKStackSubnet"
+            }
+          }
+        ],
+        "KeyName": {
+          "Ref": "sshPemKeyInput"
+        },
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                "#!/bin/bash\n",
+                "sudo yum install git -y\n",
+				"sudo yum install wget -y\n",
+				"sudo wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm\n",
+				"sudo yum install epel-release-latest-7.noarch.rpm -y\n",
+				"sudo yum update -y\n",
+				"sudo yum install ansible -y\n",
+                "sudo git clone https://github.com/jrwhite17/DevOpsAssignment2\n",
+                "sudo ansible-playbook -i \"localhost,\" -c local DevOpsAssignment2/playbooks/ELK.yml"
+              ]
+            ]
+          }
+        }
+      },
+      "DependsOn": [
+        "InternetGateway"
+      ],
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "ab6e01cf-2eba-4304-98db-831646f14673"
+        }
+      }
+    }
+  },
+  "Parameters": {
+    "sshPemKeyInput": {
+      "Description": "SSH Key Name used to access EC2 instances.",
+      "MinLength": 4,
+      "Type": "String"
+    },
+    "JenkinsEC2Instance": {
+      "Description": "Enter t2.micro or t2.small. Default is t2.micro.",
+      "Type": "String",
+      "AllowedValues": [
+        "t2.micro",
+        "t2.small"
+      ],
+      "Default": "t2.micro"
+    },
+    "ELKStackEC2Instance": {
+      "Description": "Enter t2.micro or t2.small. Default is t2.micro.",
+      "Type": "String",
+      "AllowedValues": [
+        "t2.micro",
+        "t2.small"
+      ],
+      "Default": "t2.micro"
+    },
+    "JenkinsUsername": {
+      "Description": "Enter username for Jenkins GUI.",
+      "MinLength": 1,
+      "Type": "String",
+      "Default": "root"
+    },
+    "JenkinsPassword": {
+      "Description": "Enter password for Jenkins GUI.",
+      "MinLength": 1,
+      "Type": "String",
+      "Default": "root"
+    }
+  }
+}

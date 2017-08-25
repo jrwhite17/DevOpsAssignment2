@@ -1,0 +1,25 @@
+---
+#
+# Playbook for installing ElasticSearch on EC2 instance
+# Author : Johnathan White
+# Date : 20170821
+#
+
+- hosts: "{{ host }}"
+  connection: "{{ connection }}"
+  gather_facts: "{{ gather_facts }}"
+  tasks:
+   - name: Import Elasticsearch GPG key
+     command: sudo rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
+   - name: Add Elasticsearch Repository Config
+     command: sudo curl -o /etc/yum.repos.d/kibana.repo https://raw.githubusercontent.com/jrwhite17/DevOpsAssignment2/master/elk_config/yum.repos.d/elasticsearch.repo
+   - name: Install Elasticsearch from yum
+     yum:
+       name: elasticsearch
+       state: latest
+   - name: Reload Daemon
+     command: sudo systemctl daemon-reload
+   - name: Start Elasticsearch   
+     command: sudo systemctl start elasticsearch
+   - name: Enable Elasticsearch
+     command: sudo systemctl enable elasticsearch

@@ -1,0 +1,14 @@
+---
+#
+# Playbook for installing Java on EC2 instance
+# Author : Johnathan White
+# Date : 20170821
+#
+- hosts: "{{ host }}"
+  connection: "{{ connection }}"
+  gather_facts: "{{ gather_facts }}"
+  tasks:
+   - name: Install Open JDK from yum
+     yum:
+       name: java-1.8.0-openjdk
+       state: latest

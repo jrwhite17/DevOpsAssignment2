@@ -1,0 +1,26 @@
+---
+#
+# Master playbook for installation of ELK stack on EC2 instance
+# Author : Johnathan White
+# Date : 20170821
+#
+- include: java_latest.yml
+  vars:
+      host: "all"
+      connection: "local"
+      gather_facts: "False"
+- include: elasticSearch.yml
+  vars:
+      host: "all"
+      connection: "local"
+      gather_facts: "False"
+- include: logstash.yml
+  vars:
+      host: "all"
+      connection: "local"
+      gather_facts: "False"
+- include: kibana.yml
+  vars:
+      host: "all"
+      connection: "local"
+      gather_facts: "False"

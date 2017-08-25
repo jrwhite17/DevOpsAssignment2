@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.28.0">
+      <projectUrl>https://github.com/jrwhite17/DevOpsAssignment2/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>StackName</name>
+          <description>Enter the name of the stack to be updated.</description>
+          <defaultValue>DevOpsAssignment2STACK</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>sshPemKeyInput</name>
+          <description>Key used to access EC2 instances.</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>ELKStackEC2Instance</name>
+          <description>The instance type used for the ELK stack.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>t2.micro</string>
+              <string>t2.small</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>JenkinsEC2Instance</name>
+          <description>The instance type used for the Jenkins server.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>t2.micro</string>
+              <string>t2.small</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/jrwhite17/DevOpsAssignment2</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders/>
+  <publishers/>
+  <buildWrappers>
+    <com.syncapse.jenkinsci.plugins.awscloudformationwrapper.CloudFormationBuildWrapper plugin="jenkins-cloudformation-plugin@1.2">
+      <stacks>
+        <com.syncapse.jenkinsci.plugins.awscloudformationwrapper.StackBean>
+          <stackName>${StackName}</stackName>
+          <description></description>
+          <cloudFormationRecipe>cloudformation/cloudformation_devops_assignment2_ELK.template</cloudFormationRecipe>
+          <parameters>sshPemKeyInput=${sshPemKeyInput},ELKStackEC2Instance=${ELKStackEC2Instance},JenkinsEC2Instance=${JenkinsEC2Instance}</parameters>
+          <timeout>0</timeout>
+          <awsAccessKey></awsAccessKey>
+          <awsSecretKey></awsSecretKey>
+          <autoDeleteStack>false</autoDeleteStack>
+          <awsRegion>US_East_Northern_Virginia</awsRegion>
+        </com.syncapse.jenkinsci.plugins.awscloudformationwrapper.StackBean>
+      </stacks>
+    </com.syncapse.jenkinsci.plugins.awscloudformationwrapper.CloudFormationBuildWrapper>
+  </buildWrappers>
+</project>

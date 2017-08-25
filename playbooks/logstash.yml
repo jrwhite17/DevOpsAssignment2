@@ -1,0 +1,17 @@
+---
+#
+# Playbook for installing Logstash on EC2 instance
+# Author : Johnathan White
+# Date : 20170821
+#
+
+- hosts: "{{ host }}"
+  connection: "{{ connection }}"
+  gather_facts: "{{ gather_facts }}"
+  tasks:
+   - name: Add Logstash Repository Config
+     command: sudo curl -o /etc/yum.repos.d/logstash.repo https://raw.githubusercontent.com/jrwhite17/DevOpsAssignment2/master/elk_config/yum.repos.d/logstash.repo
+   - name: Install Logstash from yum
+     yum:
+       name: logstash
+       state: latest
