@@ -9,7 +9,7 @@
       host: "all"
       connection: "local"
       gather_facts: "False"
-- include: elasticSearch.yml
+- include: elasticsearch.yml
   vars:
       host: "all"
       connection: "local"
