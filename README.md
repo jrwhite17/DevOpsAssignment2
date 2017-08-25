@@ -37,7 +37,7 @@ If everything on the Review page looks satisfactory, click the "Create" button t
 The Jenkins server's URL can be found under the Stack's "Outputs" tab.
 
 ### Deploying the ELK stack from Jenkins
-* Estimated ELK Deployment/Configuration Time (t2.small): 8 minutes*
+* Estimated ELK Deployment/Configuration Time (t2.small): 6 minutes*
 
 Log into the Jenkins server using the credentials you provided to the initial CloudFormation template.  
 Click on the "Deploy_ELK_Stack" Jenkins job.  
