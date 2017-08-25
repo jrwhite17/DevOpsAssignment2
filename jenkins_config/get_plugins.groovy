@@ -1,6 +1,6 @@
 import jenkins.model.*
 
-def pluginParameter="jenkins-cloudformation-plugin github"
+def pluginParameter="github"
 def plugins = pluginParameter.split()
 println(plugins)
 def instance = Jenkins.getInstance()

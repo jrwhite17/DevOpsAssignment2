@@ -308,12 +308,6 @@
                                 "\"/>' >> /tmp/jenkinsCreds.xml\n",
                                 "sudo yum install git -y\n",
                                 "sudo git clone https://github.com/jrwhite17/DevOpsAssignment2\n",
-                                "sudo sed 's/DevOpsAssignment2STACK/",
-                                {
-                                    "Ref": "AWS::StackName"
-                                },
-                                "/' DevOpsAssignment2/jenkins_config/Deploy_ELK_Stack_Jenkins_Job_config.xml\n",
-								"cp DevOpsAssignment2/jenkins_config/Deploy_ELK_Stack_Jenkins_Job_config.xml /tmp/debug.xml\n",
                                 "sudo sh DevOpsAssignment2/jenkins_config/get_dependencies.sh"
                             ]
                         ]
