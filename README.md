@@ -15,7 +15,7 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 ```
 
 ### Deploying the CloudFormation template
-*Estimated Jenkins Deployment/Configuration Time (t2.small): 8 minutes*
+*Estimated Jenkins Deployment/Configuration Time (t2.small):* ##### 8 minutes
 
 * Log into the AWS console.  
 * Navigate to the CloudFormation service page.  
@@ -37,7 +37,7 @@ Note: If you cloned the github repository. The file location should be:
 * The Jenkins server's URL can be found under the Stack's "Outputs" tab.
 
 ### Deploying the ELK stack from Jenkins
-*Estimated ELK Deployment/Configuration Time (t2.small): 6 minutes*
+*Estimated ELK Deployment/Configuration Time (t2.small):* ##### 6 minutes
 
 * Log into the Jenkins server using the credentials you provided to the initial CloudFormation template.  
 * Click on the "Deploy_ELK_Stack" Jenkins job.  
