@@ -15,40 +15,40 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 ```
 
 ### Deploying the CloudFormation template
-* Estimated Jenkins Deployment/Configuration Time (t2.small): 8 minutes*
+*Estimated Jenkins Deployment/Configuration Time (t2.small): 8 minutes*
 
-Log into the AWS console.  
-Navigate to the CloudFormation service page.  
-Click on the "Create Stack" button.  
-Click on the "Upload a template to Amazon S3" radio button.  
-Click on the "Choose File" button.  
-Navigate to the directory housing the "cloudformation_devops_assignment2.template" and select "Open".
+* Log into the AWS console.  
+* Navigate to the CloudFormation service page.  
+* Click on the "Create Stack" button.  
+* Click on the "Upload a template to Amazon S3" radio button.  
+* Click on the "Choose File" button.  
+* Navigate to the directory housing the "cloudformation_devops_assignment2.template" and select "Open".
 
 Note: If you cloned the github repository. The file location should be:
 ```
 /DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
 ```
 
-Specify a Stack name and fill out the necessary parameters for this for this deployment.  
-Select the "Next" button to continue on to the Options page.  
-Select the "Next" button to continue on to the Review page.  
-If everything on the Review page looks satisfactory, click the "Create" button to execute the deployment.
+* Specify a Stack name and fill out the necessary parameters for this for this deployment.  
+* Select the "Next" button to continue on to the Options page.  
+* Select the "Next" button to continue on to the Review page.  
+* If everything on the Review page looks satisfactory, click the "Create" button to execute the deployment.
 
-The Jenkins server's URL can be found under the Stack's "Outputs" tab.
+* The Jenkins server's URL can be found under the Stack's "Outputs" tab.
 
 ### Deploying the ELK stack from Jenkins
-* Estimated ELK Deployment/Configuration Time (t2.small): 6 minutes*
+*Estimated ELK Deployment/Configuration Time (t2.small): 6 minutes*
 
-Log into the Jenkins server using the credentials you provided to the initial CloudFormation template.  
-Click on the "Deploy_ELK_Stack" Jenkins job.  
-On the "Deploy_ELK_Stack" page, click the "Configure" tab.  
-Scroll down to "Build Environment" and enter your valid AWS credentials (Access Key & Secret Key).  
-Click the "Save" button.  
-On the "Deploy_ELK_Stack" page, click the "Build with Parameters" tab.  
-Specify a Stack name and fill out the necessary parameters for this for this deployment. (Note: If you use the same Stack name as you previously used on the CloudFormation deployment page, that stack will be updated with the new ELK stack.)  
-Click the "Build" button to execute the ELK stack deployment.  
+* Log into the Jenkins server using the credentials you provided to the initial CloudFormation template.  
+* Click on the "Deploy_ELK_Stack" Jenkins job.  
+* On the "Deploy_ELK_Stack" page, click the "Configure" tab.  
+* Scroll down to "Build Environment" and enter your valid AWS credentials (Access Key & Secret Key).  
+* Click the "Save" button.  
+* On the "Deploy_ELK_Stack" page, click the "Build with Parameters" tab.  
+* Specify a Stack name and fill out the necessary parameters for this for this deployment. (Note: If you use the same Stack name as you previously used on the CloudFormation deployment page, that stack will be updated with the new ELK stack.)  
+* Click the "Build" button to execute the ELK stack deployment.  
 
-The ELK stack's URL can be found under the Stack's "Outputs" tab on the CloudFormation page.
+* The ELK stack's URL can be found under the Stack's "Outputs" tab on the CloudFormation page.
 
 
 ## Running Automated Tests
