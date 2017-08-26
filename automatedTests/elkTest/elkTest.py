@@ -52,13 +52,13 @@ def testELKUpdateCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jen
 
 	#Set timeout for 15 minutes
 	jenkins_t_end = time.time() + 60 * 15
-	current_time = time.time()
+	predeploy_time = time.time()
 	while time.time() < jenkins_t_end:
 		try:
 			r = requests.get(Jenkins_URL)
 			if r.status_code == 200:
 				pprint("Jenkins is running!")
-				pprint((time.time()-current_time)/60) #Minutes
+				pprint((time.time()-predeploy_time)/60) #Minutes
 				break
 		except requests.ConnectionError, e:
 			pass
@@ -86,19 +86,19 @@ def testELKUpdateCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jen
 
 	#Load Json and Extract ELK URL
 	stack_output_json = json.loads(stack_output)
-	Elk_URL=str(stack_output_json['Stacks'][1]['Outputs'][0]['OutputValue'])
+	Elk_URL=str(stack_output_json['Stacks'][0]['Outputs'][0]['OutputValue'])
 
 	pprint("ELK URL: " + Elk_URL)
 
 	#Set timeout for 15 minutes
 	elk_t_end = time.time() + 60 * 15
-	current_time = time.time()
+	predeploy_time = time.time()
 	while time.time() < elk_t_end:
 		try:
 			r = requests.get(Elk_URL)
 			if r.status_code == 200:
 				pprint("ELK is running!")
-				pprint((time.time()-current_time)/60)#Minutes
+				pprint((time.time()-predeploy_time)/60)#Minutes
 				break
 		except requests.ConnectionError, e:
 			pass
