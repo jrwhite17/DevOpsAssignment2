@@ -17,7 +17,7 @@ JENKINS_PASSSWORD="qwer"
 JENKINS_USERNAME="jwhite"
 SSH_PEM_KEY_INPUT="jrw_key_pair"
 
-
+#Request stack
 aws cloudformation create-stack \
 --stack-name $STACK_NAME \
 --template-body file://../../cloudformation/cloudformation_devops_assignment2.template \
@@ -25,5 +25,8 @@ aws cloudformation create-stack \
 ParameterKey=JenkinsPassword,ParameterValue=$JENKINS_PASSSWORD \
 ParameterKey=JenkinsUsername,ParameterValue=$JENKINS_USERNAME \
 ParameterKey=sshPemKeyInput,ParameterValue=$SSH_PEM_KEY_INPUT
+
+#Give Cloudformation time to deploy stack
+sleep 120
 
 aws cloudformation describe-stacks --stack-name $STACK_NAME
