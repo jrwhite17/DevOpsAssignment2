@@ -12,7 +12,6 @@ import re
 import time
 import os
 import subprocess
-from urllib.request import Request, urlopen
 from pprint import pprint
 
 #Stack Name
@@ -24,7 +23,6 @@ JENKINS_USERNAME="jwhite"
 SSH_PEM_KEY_INPUT="jrw_key_pair"
 
 #Request stack
-
 CREATE_STACK_CMD = ("aws cloudformation create-stack \\"
 "--stack-name "+STACK_NAME+" \\"
 "--template-body file://../../cloudformation/cloudformation_devops_assignment2.template \\"
@@ -32,5 +30,12 @@ CREATE_STACK_CMD = ("aws cloudformation create-stack \\"
 "ParameterKey=JenkinsPassword,ParameterValue="+JENKINS_PASSSWORD+" \\"
 "ParameterKey=JenkinsUsername,ParameterValue="+JENKINS_USERNAME+" \\"
 "ParameterKey=sshPemKeyInput,ParameterValue="+SSH_PEM_KEY_INPUT+"")
-
 os.system(CREATE_STACK_CMD)
+
+#Give Cloudformation time to deploy stack
+time.sleep(120)
+
+#Write Stack Output to /tmp/stackOutput.json
+DESCRIBE_STACK_CMD="aws cloudformation describe-stacks --stack-name "+STACK_NAME+" >> /tmp/stackOutput.json"
+os.system(DESCRIBE_STACK_CMD)
+
