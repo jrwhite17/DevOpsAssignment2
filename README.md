@@ -29,7 +29,7 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 
 Note: If you cloned the github repository. The file location should be:
 ```
-/DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
+DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
 ```
 
 * Specify a Stack name and fill out the necessary parameters for this deployment.  
@@ -106,7 +106,7 @@ python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
 | elkTest1   |    Pass    |       t2.small       |                          2.79                         |     t2.small     |                        2.67                       |
 | elkTest2   |    Pass    |       t2.small       |                          2.90                         |     t2.small     |                        2.51                       |
 | elkTest3   |    Pass    |       t2.small       |                          2.76                         |     t2.micro     |                        2.95                       |
-| elkTest4   |    N/A    |       t2.small       |                          N/A                         |     t2.micro     |                        N/A                       |
+| elkTest4   |    Pass    |       t2.small       |                          3.08                         |     t2.micro     |                        2.98                       |
 | elkTest5   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
 | elkTest6   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
 | elkTest7   |    N/A    |       t2.micro       |                          N/A                         |     t2.micro     |                        N/A                       |
