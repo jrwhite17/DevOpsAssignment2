@@ -66,7 +66,7 @@ def testELKUpdateCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jen
 	#ELK
 	#===============================	
 	#Request stack
-	CREATE_STACK_CMD = ("aws cloudformation create-stack \\"
+	UPDATE_STACK_CMD = ("aws cloudformation update-stack \\"
 	"--stack-name "+STACK_NAME+" \\"
 	"--template-body file://../../cloudformation/cloudformation_devops_assignment2_ELK.template \\"
 	"--parameters ParameterKey=JenkinsEC2Instance,ParameterValue="+JENKINS_EC2_INSTANCE+" \\"
@@ -74,7 +74,7 @@ def testELKUpdateCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jen
 	"ParameterKey=JenkinsUsername,ParameterValue="+JENKINS_USERNAME+" \\"
 	"ParameterKey=ELKStackEC2Instance,ParameterValue="+ELK_EC2_INSTANCE+" \\"
 	"ParameterKey=sshPemKeyInput,ParameterValue="+SSH_PEM_KEY_INPUT+"")
-	os.system(CREATE_STACK_CMD)
+	os.system(UPDATE_STACK_CMD)
 
 	#Give Cloudformation time to update stack
 	time.sleep(120)
