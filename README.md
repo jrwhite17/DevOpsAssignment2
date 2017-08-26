@@ -70,7 +70,7 @@ Note: Here is an example of how you execute the automated test:
 python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 ```
 
-#### Test Results
+#### Test Results *executed on 8/26/2017*  
 | Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (min) |
 |------------|:---------:|:--------------------:|:-------------------------------------------:|
 | test1      | Pass      | t2.small             | 12.14                                       |
@@ -98,4 +98,4 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 **Completed**
 * Execute Ansible remotely from Jenkins server to the deployed EC2 instance
 * Dynamically add ELK stack resources/config to previous CloudFormation template  
-* Allow parameter for deployment region
+* Create parameter for EC2 deployment region
