@@ -21,8 +21,6 @@ JENKINS_EC2_INSTANCE="t2.small"
 JENKINS_PASSSWORD="qwer"
 JENKINS_USERNAME="jwhite"
 SSH_PEM_KEY_INPUT="jrw_key_pair"
-#Automated Test Parameters
-STACK_OUTPUT_PATH="/tmp/stackOutput.json"
 
 #Request stack
 CREATE_STACK_CMD = ("aws cloudformation create-stack \\"
@@ -38,10 +36,11 @@ os.system(CREATE_STACK_CMD)
 time.sleep(120)
 
 #Write Stack Output to /tmp/stackOutput.json
-DESCRIBE_STACK_CMD="aws cloudformation describe-stacks --stack-name "+STACK_NAME+" > "+STACK_OUTPUT_PATH
-stack_output = json.loads(os.system(DESCRIBE_STACK_CMD))
+DESCRIBE_STACK_CMD="aws cloudformation describe-stacks --stack-name "+STACK_NAME
+stack_output = subprocess.check_output(DESCRIBE_STACK_CMD, shell=True)
 
 #Load Json and Extract Jenkins URL
+stack_output = json.loads(stack_output)
 pprint(stack_output['Stacks']['Outputs']['OutputValue'])
 pprint(stack_output['Stacks']['Outputs']['OutputValue'])
 pprint(stack_output['Stacks']['Outputs']['OutputValue'])
