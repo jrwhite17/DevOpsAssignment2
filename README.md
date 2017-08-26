@@ -49,7 +49,7 @@ Note: If you cloned the github repository. The file location should be:
 * Scroll down to "Build Environment" and enter your valid AWS credentials (Access Key & Secret Key).  
 * Click the "Save" button.  
 * On the "Deploy_ELK_Stack" page, click the "Build with Parameters" tab.  
-* Specify a Stack name and fill out the necessary parameters for this for this deployment. (Note: If you use the same Stack name as you previously used on the CloudFormation deployment page, that stack will be updated with the new ELK stack.)  
+* Specify a Stack name and fill out the necessary parameters for this deployment. (Note: If you use the same Stack name as you previously used on the CloudFormation deployment page, that stack will be updated with the new ELK stack.)  
 * Click the "Build" button to execute the ELK stack deployment.  
 
 *The ELK stack's URL can be found under the Stack's "Outputs" tab on the CloudFormation page.*
