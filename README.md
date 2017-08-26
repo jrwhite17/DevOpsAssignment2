@@ -72,7 +72,10 @@ Note: If you cloned the github repository. The file location should be:
 * Deploy the ELK stack accross multiple EC2 instances
 * Configure a Nginx reverse proxy for the ELK stack
 * Improve deployment time by using a preconfigured Jenkins AMI
-* Create handoff of current Stack name to the Jenkins job Stack name default value
+* Create handoff of current Stack name to the Jenkins job Stack name default value 
+**Completed**
 * Create automated tests
+* Create a new subnet for the ELK stack 
+**Completed**
 * Execute Ansible remotely from Jenkins server to the deployed EC2 instance
 
