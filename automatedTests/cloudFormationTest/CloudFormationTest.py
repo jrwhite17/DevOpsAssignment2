@@ -49,13 +49,13 @@ def testJenkinsCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jenki
 	pprint("Jenkins URL: " + Jenkins_URL)
 
 	#Set timeout for 15 minutes
-	t_end = time.time() + 60 * 15
-	while time.time() < t_end:
+	jenkins_t_end = time.time() + 60 * 15
+	while time.time() < jenkins_t_end:
 		try:
 			r = requests.get(Jenkins_URL)
 			if r.status_code == 200:
 				pprint("Jenkins is running!")
-				pprint(t_end-time.time())
+				pprint((jenkins_t_end-time.time())/60) #Minutes
 				break
 		except requests.ConnectionError, e:
 			pass
