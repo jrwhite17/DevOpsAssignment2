@@ -27,11 +27,11 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 * Click on the "Choose File" button.  
 * Navigate to the directory housing the "cloudformation_devops_assignment2.template" and select "Open".
 
-Note: If you cloned the github repository. The file location should be:
+**Note:** If you cloned the github repository. The file location should be:
 ```
 DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
 ```
-
+* Click the "Next" button.
 * Specify a Stack name and fill out the necessary parameters for this deployment.  
 * Select the "Next" button to continue on to the Options page.  
 * Select the "Next" button to continue on to the Review page.  
@@ -61,12 +61,12 @@ DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
 *Tested on OS: RHEL7.4, Python: 2.7.5*  
 *Requirement: AWS CLI is installed and configured to use valid credentials.*  
 
-Description: This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
+**Description:** This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
 
 * Clone the github repository and execute the following python2 script, "CloudFormationTest.py".  
 * Open script in a text editor and type in appropriate values for the CloudFormation template.
 
-Note: Here is an example of how you execute the automated test:
+**Note:** Here is an example of how you execute the automated test:
 ```
 python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 ```
@@ -90,12 +90,12 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 *Tested on OS: RHEL7.4, Python: 2.7.5*  
 *Requirement: AWS CLI is installed and configured to use valid credentials.*  
 
-Description: This test executes the CloudFormation update ELK template and evaluates how long the ELK deployment/configuration takes.  
+**Description:** This test executes the CloudFormation update ELK template and evaluates how long the ELK deployment/configuration takes.  
 
 * Clone the github repository and execute the following python2 script, "elkTest.py".  
 * Open script in a text editor and type in appropriate values for the updated CloudFormation template.
 
-Note: Here is an example of how you execute the automated test:
+**Note:** Here is an example of how you execute the automated test:
 ```
 python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
 ```

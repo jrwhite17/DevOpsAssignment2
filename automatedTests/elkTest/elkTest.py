@@ -109,11 +109,6 @@ def testELKUpdateCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jen
 	os.system(DELETE_STACK_CMD)
 		
 #MAIN
-testELKUpdateCFTemplate("testELK1","t2.small","root","root","t2.small","jrw_key_pair")
-testELKUpdateCFTemplate("testELK2","t2.small","root","root","t2.small","jrw_key_pair")
-testELKUpdateCFTemplate("testELK3","t2.small","root","root","t2.micro","jrw_key_pair")
-testELKUpdateCFTemplate("testELK4","t2.small","root","root","t2.micro","jrw_key_pair")
-testELKUpdateCFTemplate("testELK5","t2.micro","root","root","t2.small","jrw_key_pair")
-testELKUpdateCFTemplate("testELK6","t2.micro","root","root","t2.small","jrw_key_pair")
-testELKUpdateCFTemplate("testELK7","t2.micro","root","root","t2.micro","jrw_key_pair")
-testELKUpdateCFTemplate("testELK8","t2.micro","root","root","t2.micro","jrw_key_pair")
+#Example call
+# STACK NAME | JENKINS EC2 INSTANCE | JENKINS PASSWORD | JENKINS USERNAME | ELK STACK EC2 INSTANCE | SSH KEY PAIR
+#testELKUpdateCFTemplate("testELK1","t2.small","root","root","t2.small","jrw_key_pair")
