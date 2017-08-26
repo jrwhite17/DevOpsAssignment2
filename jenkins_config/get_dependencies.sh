@@ -29,6 +29,8 @@ sudo mkdir $JENKINS_HOME_DIR/init.groovy.d
 sudo mv DevOpsAssignment2/jenkins_config/*.groovy $JENKINS_HOME_DIR/init.groovy.d/.
 #Move Deploy_ELK_Stack_Jenkins_Job.xml to /tmp/. so the create_job.groovy script knows where to find it
 sudo mv DevOpsAssignment2/jenkins_config/Deploy_ELK_Stack_Jenkins_Job_config.xml /tmp/.
+#Allow access to Deploy_ELK_Stack_Jenkins_Job_config to add defualt stack name
+sudo chmod 777 /tmp/Deploy_ELK_Stack_Jenkins_Job_config.xml
 
 #Start Jenkins
 sudo service jenkins start
