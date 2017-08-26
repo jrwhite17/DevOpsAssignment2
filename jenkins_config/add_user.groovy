@@ -3,11 +3,11 @@ import hudson.security.*
 import jenkins.model.*
 
 //Load XML
-JenkinsCredentials = new XmlSlurper().parse("/tmp/stackData.xml")
+CloudformationData = new XmlSlurper().parse("/tmp/stackData.xml")
 
 //Change these when CloudFormation template is ready
-jenkins_username = Cloudformation.jenkinsUsername.text()
-jenkins_password = Cloudformation.jenkinsPassword.text()
+jenkins_username = CloudformationData.jenkinsUsername.text()
+jenkins_password = CloudformationData.jenkinsPassword.text()
 
 //Load Jenkins class
 def instance = Jenkins.getInstance()
