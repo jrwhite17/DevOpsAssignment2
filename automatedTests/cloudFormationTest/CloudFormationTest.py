@@ -54,9 +54,9 @@ def testJenkinsCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jenki
 		try:
 			r = requests.get(Jenkins_URL)
 			if r.status_code == 200:
-			pprint("Jenkins is running!")
-			pprint(t_end-time.time())
-			break
+				pprint("Jenkins is running!")
+				pprint(t_end-time.time())
+				break
 		except requests.ConnectionError, e:
 			pass
 			#Do nothing
