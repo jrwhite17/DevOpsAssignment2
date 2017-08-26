@@ -78,6 +78,23 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 | test3      | Pass      | t2.micro             | 12.28                                       |
 | test4      | Pass      | t2.micro             | 12.83                                       |
 
+
+### Deploying the ELK stack from Jenkins*
+**Note: this is not deploying the ELK stack from Jenkins, but simulating the AWS api call Jenkins makes when deploying the ELK stack*
+*Tested on OS: RHEL7.4, Python: 2.7.5*  
+*Requirement: AWS CLI is installed and configured to use valid credentials.*  
+
+Description: This test executes the CloudFormation update ELK template and evaluates how long the ELK deployment/configuration takes.  
+
+* Clone the github repository and execute the following python2 "elkTest.py".  
+
+Note: Here is an example of how you execute the automated test:
+```
+python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
+```
+
+
+
 ## Authors
 
 * **Johnathan White** - [Github](https://github.com/jrwhite17)
