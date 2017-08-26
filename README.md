@@ -18,7 +18,7 @@ git clone https://github.com/jrwhite17/DevOpsAssignment2
 
 ### Deploying the CloudFormation Jenkins template
 *Estimated Jenkins Deployment/Configuration Time (t2.small):*
-**12 minutes**
+**6 minutes**
 
 * Log into the AWS console.  
 * Navigate to the CloudFormation service page.  
@@ -64,6 +64,7 @@ Note: If you cloned the github repository. The file location should be:
 Description: This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
 
 * Clone the github repository and execute the following python2 script, "CloudFormationTest.py".  
+* Open script in a text editor and type in appropriate values for the CloudFormation template.
 
 Note: Here is an example of how you execute the automated test:
 ```
@@ -74,10 +75,10 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 | Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (est. min) |
 |------------|:---------:|:--------------------:|:-------------------------------------------:|
 | test1      | Pass      | t2.small             | 2.84                                       |
-| test2      | N/A      | t2.small             | N/A                                       |
-| test3      | N/A      | t2.small             | N/A                                       |
-| test4      | N/A      | t2.small             | N/A                                       |
-| test5      | N/A      | t2.small             | N/A                                       |
+| test2      | Pass      | t2.small             | 2.94                                       |
+| test3      | Pass      | t2.small             | 2.59                                       |
+| test4      | Pass      | t2.small             | 3.21                                       |
+| test5      | Pass      | t2.small             | 2.69                                       |
 | test6      | N/A      | t2.micro             | N/A                                       |
 | test7      | N/A      | t2.micro             | N/A                                       |
 | test8      | N/A      | t2.micro             | N/A                                       |
@@ -92,6 +93,7 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 Description: This test executes the CloudFormation update ELK template and evaluates how long the ELK deployment/configuration takes.  
 
 * Clone the github repository and execute the following python2 script, "elkTest.py".  
+* Open script in a text editor and type in appropriate values for the updated CloudFormation template.
 
 Note: Here is an example of how you execute the automated test:
 ```
