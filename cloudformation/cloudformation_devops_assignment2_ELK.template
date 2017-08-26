@@ -355,15 +355,20 @@
                             "",
                             [
                                 "#!/bin/bash\n",
-                                "sudo echo '<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?><JenkinsCredentials username=\"",
+                                "sudo echo '<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?><Cloudformation><jenkinsUsername><![CDATA[",
                                 {
                                     "Ref": "JenkinsUsername"
                                 },
-                                "\" password=\"",
+                                "]]></jenkinsUsername><jenkinsPassword><![CDATA[",
                                 {
                                     "Ref": "JenkinsPassword"
                                 },
-                                "\"/>' >> /tmp/jenkinsCreds.xml\n",
+                                "]]></jenkinsPassword><stackName><![CDATA[",
+                                {
+                                    "Ref": "AWS::StackName"
+                                },								
+								"]]></stackName></Cloudformation>' >> /tmp/stackData.xml\n",
+								"sudo chmod 777 /tmp/stackData.xml\n",
                                 "sudo yum install git -y\n",
                                 "sudo git clone https://github.com/jrwhite17/DevOpsAssignment2\n",
                                 "sudo sh DevOpsAssignment2/jenkins_config/get_dependencies.sh"
