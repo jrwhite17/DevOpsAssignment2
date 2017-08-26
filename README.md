@@ -16,9 +16,9 @@ Clone the github repository or download the "
 git clone https://github.com/jrwhite17/DevOpsAssignment2
 ```
 
-### Deploying the CloudFormation template
+### Deploying the CloudFormation Jenkins template
 *Estimated Jenkins Deployment/Configuration Time (t2.small):*
-**8 minutes**
+**12 minutes**
 
 * Log into the AWS console.  
 * Navigate to the CloudFormation service page.  
@@ -57,12 +57,26 @@ Note: If you cloned the github repository. The file location should be:
 
 ## Running Automated Tests
 
-### Deploying the CloudFormation template
+### Deploying the CloudFormation Jenkins template
+*Tested on OS: RHEL7.4, Python: *
+*Requirement: AWS CLI is installed and configured to use valid credentials.*
 
+Description: This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
+
+* Clone the github repository and execute the following python2 "CloudFormationTest.py".  
+
+Note: Here is an example of how you execute the automated test:
+```
+python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
+```
+
+#### Test Results
 | Stack Name |   Region  | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (min) |
 |------------|:---------:|:---------:|:--------------------:|:-------------------------------------------:|
 | test1      | us-east-1 | Pass      | t2.small             | 12.14                                       |
 | test2      | us-east-1 | Pass      | t2.small             | 12.04                                       |
+| test3      | us-east-1 | Pass      | t2.micro             | 12.28                                       |
+| test4      | us-east-1 | Pass      | t2.micro             | 12.83                                       |
 
 ## Authors
 
