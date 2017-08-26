@@ -38,11 +38,10 @@ os.system(CREATE_STACK_CMD)
 time.sleep(120)
 
 #Write Stack Output to /tmp/stackOutput.json
-DESCRIBE_STACK_CMD="aws cloudformation describe-stacks --stack-name "+STACK_NAME+" >> "+STACK_OUTPUT_PATH
-os.system(DESCRIBE_STACK_CMD)
+DESCRIBE_STACK_CMD="aws cloudformation describe-stacks --stack-name "+STACK_NAME+" > "+STACK_OUTPUT_PATH
+stack_output = json.loads(os.system(DESCRIBE_STACK_CMD))
 
 #Load Json and Extract Jenkins URL
-stack_output = json.loads(STACK_OUTPUT_PATH)
 pprint(stack_output['Stacks']['Outputs']['OutputValue'])
 pprint(stack_output['Stacks']['Outputs']['OutputValue'])
 pprint(stack_output['Stacks']['Outputs']['OutputValue'])
