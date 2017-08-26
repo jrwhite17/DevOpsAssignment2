@@ -58,8 +58,8 @@ Note: If you cloned the github repository. The file location should be:
 ## Running Automated Tests
 
 ### Deploying the CloudFormation Jenkins template
-*Tested on OS: RHEL7.4, Python: 2.7.5*
-*Requirement: AWS CLI is installed and configured to use valid credentials.*
+*Tested on OS: RHEL7.4, Python: 2.7.5*  
+*Requirement: AWS CLI is installed and configured to use valid credentials.*  
 
 Description: This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
 
@@ -71,12 +71,12 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 ```
 
 #### Test Results
-| Stack Name |   Region  | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (min) |
-|------------|:---------:|:---------:|:--------------------:|:-------------------------------------------:|
-| test1      | us-east-1 | Pass      | t2.small             | 12.14                                       |
-| test2      | us-east-1 | Pass      | t2.small             | 12.04                                       |
-| test3      | us-east-1 | Pass      | t2.micro             | 12.28                                       |
-| test4      | us-east-1 | Pass      | t2.micro             | 12.83                                       |
+| Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (min) |
+|------------|:---------:|:--------------------:|:-------------------------------------------:|
+| test1      | Pass      | t2.small             | 12.14                                       |
+| test2      | Pass      | t2.small             | 12.04                                       |
+| test3      | Pass      | t2.micro             | 12.28                                       |
+| test4      | Pass      | t2.micro             | 12.83                                       |
 
 ## Authors
 
@@ -97,4 +97,5 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 * Create a new subnet for the ELK stack 
 **Completed**
 * Execute Ansible remotely from Jenkins server to the deployed EC2 instance
-* Dynamically add ELK stack resources/config to previous CloudFormation template
+* Dynamically add ELK stack resources/config to previous CloudFormation template  
+* Allow parameter for deployment region

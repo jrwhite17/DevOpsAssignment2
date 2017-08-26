@@ -67,5 +67,13 @@ def testJenkinsCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jenki
 	
 		
 #MAIN
-testJenkinsCFTemplate("test3","t2.micro","root","root","jrw_key_pair")
-testJenkinsCFTemplate("test4","t2.micro","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test1","t2.small","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test2","t2.small","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test3","t2.small","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test4","t2.small","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test5","t2.small","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test6","t2.micro","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test7","t2.micro","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test8","t2.micro","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test9","t2.micro","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test10","t2.micro","root","root","jrw_key_pair")
