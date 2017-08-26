@@ -37,7 +37,7 @@ Note: If you cloned the github repository. The file location should be:
 * Select the "Next" button to continue on to the Review page.  
 * If everything on the Review page looks satisfactory, click the "Create" button to execute the deployment.
 
-* The Jenkins server's URL can be found under the Stack's "Outputs" tab.
+*The Jenkins server's URL can be found under the Stack's "Outputs" tab.*
 
 ### Deploying the ELK stack from Jenkins
 *Estimated ELK Deployment/Configuration Time (t2.small):*
@@ -52,7 +52,7 @@ Note: If you cloned the github repository. The file location should be:
 * Specify a Stack name and fill out the necessary parameters for this for this deployment. (Note: If you use the same Stack name as you previously used on the CloudFormation deployment page, that stack will be updated with the new ELK stack.)  
 * Click the "Build" button to execute the ELK stack deployment.  
 
-* The ELK stack's URL can be found under the Stack's "Outputs" tab on the CloudFormation page.
+*The ELK stack's URL can be found under the Stack's "Outputs" tab on the CloudFormation page.*
 
 
 ## Running Automated Tests
