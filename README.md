@@ -63,7 +63,7 @@ Note: If you cloned the github repository. The file location should be:
 
 Description: This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
 
-* Clone the github repository and execute the following python2 "CloudFormationTest.py".  
+* Clone the github repository and execute the following python2 script, "CloudFormationTest.py".  
 
 Note: Here is an example of how you execute the automated test:
 ```
@@ -80,13 +80,13 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 
 
 ### Deploying the ELK stack from Jenkins*
-**Note: this is not deploying the ELK stack from Jenkins, but simulating the AWS api call Jenkins makes when deploying the ELK stack*
+**Note: This is not deploying the ELK stack from Jenkins, but simulating the AWS api call Jenkins makes when deploying the ELK stack*  
 *Tested on OS: RHEL7.4, Python: 2.7.5*  
 *Requirement: AWS CLI is installed and configured to use valid credentials.*  
 
 Description: This test executes the CloudFormation update ELK template and evaluates how long the ELK deployment/configuration takes.  
 
-* Clone the github repository and execute the following python2 "elkTest.py".  
+* Clone the github repository and execute the following python2 script, "elkTest.py".  
 
 Note: Here is an example of how you execute the automated test:
 ```
