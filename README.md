@@ -58,7 +58,7 @@ Note: If you cloned the github repository. The file location should be:
 ## Running Automated Tests
 
 ### Deploying the CloudFormation Jenkins template
-*Tested on OS: RHEL7.4, Python: *
+*Tested on OS: RHEL7.4, Python: 2.7.5*
 *Requirement: AWS CLI is installed and configured to use valid credentials.*
 
 Description: This test executes the CloudFormation Jenkins template and evaluates how long the Jenkins deployment/configuration takes.  
