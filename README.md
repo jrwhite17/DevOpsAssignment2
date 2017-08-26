@@ -107,17 +107,17 @@ python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
 | elkTest2   |    Pass    |       t2.small       |                          2.90                         |     t2.small     |                        2.51                       |
 | elkTest3   |    Pass    |       t2.small       |                          2.76                         |     t2.micro     |                        2.95                       |
 | elkTest4   |    Pass    |       t2.small       |                          3.08                         |     t2.micro     |                        2.98                       |
-| elkTest5   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
-| elkTest6   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
-| elkTest7   |    N/A    |       t2.micro       |                          N/A                         |     t2.micro     |                        N/A                       |
-| elkTest8   |    N/A    |       t2.micro       |                          N/A                         |     t2.micro     |                        N/A                       |
+| elkTest5   |    Fail    |       t2.micro       |                          2.14                         |     t2.small     |                        N/A                       |
+| elkTest6   |    Pass    |       t2.micro       |                          2.77                         |     t2.small     |                        2.97                       |
+| elkTest7   |    Pass    |       t2.micro       |                          2.75                         |     t2.micro     |                        2.73                       |
+| elkTest8   |    Pass    |       t2.micro       |                          2.64                         |     t2.micro     |                        2.59                       |
 
 ## Authors
 
 * **Johnathan White** - [Github](https://github.com/jrwhite17)
 
 ## Notes
-[Google Doc](https://docs.google.com/document/d/1o1o_rkduFHuvIolAd8G8mSbP2x8Q9r0qlCpKwVkSWFo/edit?usp=sharing)
+[Google Docs](https://docs.google.com/document/d/1o1o_rkduFHuvIolAd8G8mSbP2x8Q9r0qlCpKwVkSWFo/edit?usp=sharing)
 
 ## Potential Improvements
 
