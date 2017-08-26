@@ -72,18 +72,18 @@ python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 ```
 
 #### Tests *executed on 8/26/2017*  
-| Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (est. min) |
+| Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins EC2 Deployment/Configuration Time (est. min) |
 |------------|:---------:|:--------------------:|:-------------------------------------------:|
 | test1      | Pass      | t2.small             | 2.84                                       |
 | test2      | Pass      | t2.small             | 2.94                                       |
 | test3      | Pass      | t2.small             | 2.59                                       |
 | test4      | Pass      | t2.small             | 3.21                                       |
 | test5      | Pass      | t2.small             | 2.69                                       |
-| test6      | N/A      | t2.micro             | N/A                                       |
-| test7      | N/A      | t2.micro             | N/A                                       |
-| test8      | N/A      | t2.micro             | N/A                                       |
-| test9      | N/A      | t2.micro             | N/A                                       |
-| test10      | N/A      | t2.micro             | N/A                                       |
+| test6      | Pass      | t2.micro             | 2.66                                       |
+| test7      | Pass      | t2.micro             | 2.71                                       |
+| test8      | Pass      | t2.micro             | 2.69                                       |
+| test9      | Pass      | t2.micro             | 2.65                                       |
+| test10      | Pass      | t2.micro             | 2.85                                       |
 
 ### Deploying the ELK stack from Jenkins*
 **Note: This is not deploying the ELK stack from Jenkins, but simulating the AWS api call Jenkins makes when deploying the ELK stack*  
