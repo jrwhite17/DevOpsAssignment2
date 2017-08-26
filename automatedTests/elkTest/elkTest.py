@@ -85,7 +85,7 @@ def testELKUpdateCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jen
 
 	#Load Json and Extract ELK URL
 	stack_output_json = json.loads(stack_output)
-	Elk_URL=str(stack_output_json['Stacks'][0]['Outputs'][1]['OutputValue'])
+	Elk_URL=str(stack_output_json['Stacks'][1]['Outputs'][0]['OutputValue'])
 
 	pprint("ELK URL: " + Elk_URL)
 

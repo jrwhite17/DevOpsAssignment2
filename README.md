@@ -70,7 +70,7 @@ Note: Here is an example of how you execute the automated test:
 python DevOpsAssignment2\automatedTests\cloudFormationTest\CloudFormationTest.py
 ```
 
-#### Test Results *executed on 8/26/2017*  
+#### Tests *executed on 8/26/2017*  
 | Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (min) |
 |------------|:---------:|:--------------------:|:-------------------------------------------:|
 | test1      | Pass      | t2.small             | 12.14                                       |
@@ -111,6 +111,7 @@ python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
 * Create handoff of current Stack name to the Jenkins job Stack name default value 
 **Completed**
 * Create automated tests
+**Completed**
 * Create a new subnet for the ELK stack 
 **Completed**
 * Execute Ansible remotely from Jenkins server to the deployed EC2 instance
