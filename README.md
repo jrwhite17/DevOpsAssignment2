@@ -104,8 +104,8 @@ python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
 | Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins EC2 Deployment/Configuration Time (est. min) | ELK EC2 Instance | ELK EC2 Deployment/Configuration Time (est. min) |
 |------------|:---------:|:--------------------:|:----------------------------------------------------:|:----------------:|:------------------------------------------------:|
 | elkTest1   |    Pass    |       t2.small       |                          2.79                         |     t2.small     |                        2.67                       |
-| elkTest2   |    N/A    |       t2.small       |                          N/A                         |     t2.small     |                        N/A                       |
-| elkTest3   |    N/A    |       t2.small       |                          N/A                         |     t2.micro     |                        N/A                       |
+| elkTest2   |    Pass    |       t2.small       |                          2.90                         |     t2.small     |                        2.51                       |
+| elkTest3   |    Pass    |       t2.small       |                          2.76                         |     t2.micro     |                        2.95                       |
 | elkTest4   |    N/A    |       t2.small       |                          N/A                         |     t2.micro     |                        N/A                       |
 | elkTest5   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
 | elkTest6   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
