@@ -78,4 +78,4 @@ Note: If you cloned the github repository. The file location should be:
 * Create a new subnet for the ELK stack 
 **Completed**
 * Execute Ansible remotely from Jenkins server to the deployed EC2 instance
-
+* Dynamically add ELK stack resources/config to previous CloudFormation template
