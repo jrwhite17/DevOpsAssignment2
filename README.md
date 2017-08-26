@@ -100,7 +100,17 @@ Note: Here is an example of how you execute the automated test:
 python DevOpsAssignment2\automatedTests\elkTest\elkTest.py
 ```
 
-
+#### Tests *executed on 8/26/2017* 
+| Stack Name | Pass/Fail | Jenkins EC2 Instance | Jenkins EC2 Deployment/Configuration Time (est. min) | ELK EC2 Instance | ELK EC2 Deployment/Configuration Time (est. min) |
+|------------|:---------:|:--------------------:|:----------------------------------------------------:|:----------------:|:------------------------------------------------:|
+| elkTest1   |    N/A    |       t2.small       |                          N/A                         |     t2.small     |                        N/A                       |
+| elkTest2   |    N/A    |       t2.small       |                          N/A                         |     t2.small     |                        N/A                       |
+| elkTest3   |    N/A    |       t2.small       |                          N/A                         |     t2.micro     |                        N/A                       |
+| elkTest4   |    N/A    |       t2.small       |                          N/A                         |     t2.micro     |                        N/A                       |
+| elkTest5   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
+| elkTest6   |    N/A    |       t2.micro       |                          N/A                         |     t2.small     |                        N/A                       |
+| elkTest7   |    N/A    |       t2.micro       |                          N/A                         |     t2.micro     |                        N/A                       |
+| elkTest8   |    N/A    |       t2.micro       |                          N/A                         |     t2.micro     |                        N/A                       |
 
 ## Authors
 
