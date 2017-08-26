@@ -40,7 +40,12 @@ DESCRIBE_STACK_CMD="aws cloudformation describe-stacks --stack-name "+STACK_NAME
 stack_output = subprocess.check_output(DESCRIBE_STACK_CMD, shell=True)
 
 #Load Json and Extract Jenkins URL
-stack_output = json.loads(stack_output)
-pprint(stack_output['Stacks']['Outputs']['OutputValue'])
-pprint(stack_output['Stacks']['Outputs']['OutputValue'])
-pprint(stack_output['Stacks']['Outputs']['OutputValue'])
+stack_output_json = json.loads(stack_output)
+Jenkins_URL=str(stack_output_json['Stacks'][0]['Outputs'][0]['OutputValue'])
+
+pprint("Jenkins URL: " + Jenkins_URL)
+
+
+
+
+
