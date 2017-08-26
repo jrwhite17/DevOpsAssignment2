@@ -61,9 +61,11 @@ def testJenkinsCFTemplate(stack_name,jenkins_ec2_instance,jenkins_password,jenki
 			pass
 			#Do nothing
 		
-		
+	#Delete Stack
+	DELETE_STACK_CMD="aws cloudformation delete-stack --stack-name "+STACK_NAME
+	os.system(DELETE_STACK_CMD)
+	
 		
 #MAIN
-testJenkinsCFTemplate("test1","t2.small","root","root","jrw_key_pair")
-testJenkinsCFTemplate("test2","t2.small","root","root","jrw_key_pair")
-testJenkinsCFTemplate("test3","t2.small","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test3","t2.micro","root","root","jrw_key_pair")
+testJenkinsCFTemplate("test4","t2.micro","root","root","jrw_key_pair")

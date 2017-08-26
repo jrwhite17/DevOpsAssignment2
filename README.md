@@ -57,7 +57,12 @@ Note: If you cloned the github repository. The file location should be:
 
 ## Running Automated Tests
 
-### TBD
+### Deploying the CloudFormation template
+
+| Stack Name |   Region  | Pass/Fail | Jenkins EC2 Instance | Jenkins Deployment/Configuration Time (min) |
+|------------|:---------:|:---------:|:--------------------:|:-------------------------------------------:|
+| test1      | us-east-1 | Pass      | t2.small             | 12.14                                       |
+| test2      | us-east-1 | Pass      | t2.small             | 12.04                                       |
 
 ## Authors
 
