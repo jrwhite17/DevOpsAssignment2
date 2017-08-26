@@ -367,8 +367,8 @@
                                 {
                                     "Ref": "AWS::StackName"
                                 },								
-								"]]></stackName></Cloudformation>' > /tmp/stackData.xml\n",
-								"sudo chmod 777 /tmp/stackData.xml\n",
+                                "]]></stackName></Cloudformation>' > /tmp/stackData.xml\n",
+                                "sudo chmod 777 /tmp/stackData.xml\n",
                                 "sudo yum install git -y\n",
                                 "sudo git clone https://github.com/jrwhite17/DevOpsAssignment2\n",
                                 "sudo sh DevOpsAssignment2/jenkins_config/get_dependencies.sh"
