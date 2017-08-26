@@ -7,7 +7,7 @@ CloudformationData = new XmlSlurper().parse("/tmp/stackData.xml")
 def stackName = CloudformationData.stackName.text()
 
 //Add Stack Name to job config
-def file = new File('/tmp/stackData.xml')
+def file = new File('/tmp/Deploy_ELK_Stack_Jenkins_Job_config.xml')
 def newConfig = file.text.replace('DevOpsAssignment2STACK', stackName)
 file.text = newConfig
 
