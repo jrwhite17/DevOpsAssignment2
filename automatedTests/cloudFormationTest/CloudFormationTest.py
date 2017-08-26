@@ -12,6 +12,7 @@ import re
 import time
 import os
 import subprocess
+import request
 from pprint import pprint
 
 #Stack Name
@@ -45,7 +46,10 @@ Jenkins_URL=str(stack_output_json['Stacks'][0]['Outputs'][0]['OutputValue'])
 
 pprint("Jenkins URL: " + Jenkins_URL)
 
-
-
-
-
+#Set timeout for 15 minutes
+t_end = time.time() + 60 * 15
+while time.time() < t_end:
+	r = requests.get(Jenkins_URL)
+    if r.status_code == 200:
+		pprint("Jenkins is running!")
+		break
