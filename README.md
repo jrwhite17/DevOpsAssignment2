@@ -32,7 +32,7 @@ Note: If you cloned the github repository. The file location should be:
 /DevOpsAssignment2/cloudformation/cloudformation_devops_assignment2.template
 ```
 
-* Specify a Stack name and fill out the necessary parameters for this for this deployment.  
+* Specify a Stack name and fill out the necessary parameters for this deployment.  
 * Select the "Next" button to continue on to the Options page.  
 * Select the "Next" button to continue on to the Review page.  
 * If everything on the Review page looks satisfactory, click the "Create" button to execute the deployment.
